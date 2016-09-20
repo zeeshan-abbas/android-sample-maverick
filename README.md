@@ -7,11 +7,11 @@ Part 4: Conceptual Questions
 	- In Interface, all methods should be abstract methods whereas Abstact Class can have abstract and non-abstract methods.
 	- Interface can be implemented so a class can implement multiple interfaces. On the other hand abstract class can be extended so a class can only extend one class becuase Java doesn't allow multiple inhertance.
 	- To define Interface "interface" keyword is used. e.g.
-        ```java
+        ```
             public interface A{ public void print(); }
         ```
 	- To define Abstract class and methods, "abstract" keyword is used e.g.
-		```java
+		```
             public abstract class B{ public abstract void print(); }`
 		```
 2. The main flaw of inhertance in Java is that it doesn't allow multiple inhertance through classes due to the simplicity because multiple inhertance can cause "Diamond Ring Problem" where a class extends two classes and those classes extends the same parent class. To solve this Java provide interfaces which are close to inhertance but could not really fullfil the requirements becuase interface can only have abstract methods.

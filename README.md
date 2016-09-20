@@ -4,17 +4,17 @@ Part 4: Conceptual Questions
 ----------------------------
 
 1. Following are some major differences between Interface and Abstract Class:
-	- In Interface, all methods should be abstract methods whereas Abstact Class can have abstract and non-abstract methods.
-	- Interface can be implemented so a class can implement multiple interfaces. On the other hand abstract class can be extended so a class can only extend one class becuase Java doesn't allow multiple inhertance.
+	- In Interface, all methods should be abstract methods whereas Abstract Class can have abstract and non-abstract methods.
+	- Interface can be implemented so a class can implement multiple interfaces. On the other hand abstract class can be extended so a class can only extend one class becuase Java doesn't allow multiple inheritance.
 	- To define Interface "interface" keyword is used. e.g.
         ```
             public interface A{ public void print(); }
         ```
 	- To define Abstract class and methods, "abstract" keyword is used e.g.
 		```
-            public abstract class B{ public abstract void print(); }`
+            public abstract class B{ public abstract void print(); }
 		```
-2. The main flaw of inhertance in Java is that it doesn't allow multiple inhertance through classes due to the simplicity because multiple inhertance can cause "Diamond Ring Problem" where a class extends two classes and those classes extends the same parent class. To solve this Java provide interfaces which are close to inhertance but could not really fullfil the requirements becuase interface can only have abstract methods.
+2. The main flaw of inheritance in Java is that it doesn't allow multiple inheritance through classes due to the simplicity because multiple inhertance can cause "Diamond Ring Problem" where a class extends two classes and those classes extends the same parent class. To solve this Java provide interfaces which are close to inhertance but could not really fullfil the requirements becuase interface can only have abstract methods.
 
 3. Following are few major differences between Activity and Fragment.
 	- Activity is basically a single focused user interface where user can interact with app whereas Fragment is an independent portion of user interface in an Activity.
@@ -64,5 +64,5 @@ If an app is developed for tablets and phone and because tablet have more screen
 6. Some issues with AsyncTask are:
 	- Most common issue that developer face using AsyncTask is during orientation change. When orientation is changed and if activity is restarted (based of the layout changes and other factors) then current running task won't have the instance of current activity which can cause problem.
 	- After the Android 1.5 android supports only 10 task at the same time.
-	- Developer needs to manualy handle the cancelation of AsyncTask by checking the flag after each statment.
+	- Developer needs to manually handle the cancellation of AsyncTask by checking the flag after each line of code.
 	
